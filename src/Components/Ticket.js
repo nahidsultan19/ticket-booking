@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Ticket = ({ ticket, setBookTicket }) => {
-    const { name, from, to, time } = ticket;
+    const { name, from, to, time, quantity } = ticket;
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl px-10">
             <div class="card-body text-center">
@@ -12,7 +12,7 @@ const Ticket = ({ ticket, setBookTicket }) => {
                         time.length > 0 ? <span>{time[0]}</span> : <span>No tickets available</span>
                     }
                 </p>
-                <p>{time.length} {time.length > 1 ? 'Tickets' : 'Ticket'} Available</p>
+                <p>{quantity} {quantity <= 0 ? 'Ticket' : 'Tickets'} Available</p>
                 <div class="card-actions justify-center">
                     <label onClick={() => setBookTicket(ticket)} htmlFor="booking-modal" class="btn btn-primary">Book Now</label>
                 </div>

@@ -2,16 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { format } from 'date-fns';
 import Ticket from './Ticket';
 import BookingModal from './BookingModal';
+import { useQuery } from 'react-query';
 
 const AvailableTickets = ({ date }) => {
-    const [tickets, setTickets] = useState([]);
+    // const [tickets, setTickets] = useState([]);
     const [bookTicket, setBookTicket] = useState(null);
 
-    useEffect(() => {
-        fetch('tickets.json')
-            .then(res => res.json())
-            .then(data => setTickets(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('tickets.json')
+    //         .then(res => res.json())
+    //         .then(data => setTickets(data))
+    // }, [])
+
+    const { data: tickets, isLoading } = useQuery('availableTickets', () => fetch('tickets.json').then(res => res.json()))
+
+    if (isLoading) {
+        return <p>Looding..</p>
+    }
 
     return (
         <div className=''>

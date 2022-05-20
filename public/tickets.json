@@ -4,6 +4,7 @@
         "name": "Hanif",
         "from": "Rajshahi",
         "to": "Dhaka",
+        "quantity": 20,
         "time": [
             "08.00 AM",
             "09:00 AM",
@@ -28,10 +29,15 @@
         "name": "Syamoli",
         "from": "Rajshahi",
         "to": "Khulna",
+        "quantity": 20,
         "time": [
             "08.00 AM",
             "09:00 AM",
-            "11:00 PM"
+            "11:00 AM",
+            "12:00 AM",
+            "11:00 PM",
+            "11:30 PM",
+            "12:00 AM"
         ]
     },
     {
@@ -39,6 +45,7 @@
         "name": "SR",
         "from": "Rajshahi",
         "to": "Kumilla",
+        "quantity": 20,
         "time": [
             "11:00 AM",
             "12:00 AM",
@@ -60,6 +67,7 @@
         "name": "Green Line",
         "from": "Rajshahi",
         "to": "Chottrogram",
+        "quantity": 0,
         "time": [
             "08.00 AM",
             "09:00 AM",
@@ -72,6 +80,85 @@
             "04:00 PM",
             "05:00 PM",
             "06:00 PM",
+            "07:00 PM",
+            "08:00 PM",
+            "09:00 PM",
+            "10:00 PM",
+            "11:00 PM"
+        ]
+    },
+    {
+        "_id": 5,
+        "name": "Dipjal",
+        "from": "Dhaka",
+        "to": "Rajshahi",
+        "quantity": 20,
+        "time": [
+            "08.00 AM",
+            "09:00 AM",
+            "10:00 AM",
+            "11:00 AM",
+            "12:00 AM",
+            "01:00 PM",
+            "02:00 PM",
+            "03:00 PM",
+            "04:00 PM",
+            "05:00 PM",
+            "06:00 PM",
+            "07:00 PM",
+            "08:00 PM",
+            "09:00 PM",
+            "10:00 PM",
+            "11:00 PM"
+        ]
+    },
+    {
+        "_id": 6,
+        "name": "Hanif",
+        "from": "Dhaka",
+        "to": "Jessore",
+        "quantity": 20,
+        "time": [
+            "08.00 AM",
+            "09:00 AM",
+            "10:00 AM",
+            "11:00 AM",
+            "12:00 AM",
+            "01:00 PM",
+            "02:00 PM",
+            "03:00 PM",
+            "04:00 PM",
+            "05:00 PM",
+            "06:00 PM",
+            "07:00 PM",
+            "08:00 PM",
+            "09:00 PM",
+            "10:00 PM",
+            "11:00 PM"
+        ]
+    },
+    {
+        "_id": 7,
+        "name": "Hanif",
+        "from": "Dhaka",
+        "to": "Barishal",
+        "quantity": 20,
+        "time": [
+            "08.00 AM",
+            "09:00 AM",
+            "10:00 AM",
+            "11:00 AM",
+            "12:00 AM",
+            "11:00 PM"
+        ]
+    },
+    {
+        "_id": 8,
+        "name": "Green Line",
+        "from": "Dhaka",
+        "to": "Chottrogram",
+        "quantity": 20,
+        "time": [
             "07:00 PM",
             "08:00 PM",
             "09:00 PM",
